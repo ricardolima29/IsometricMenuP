@@ -13,7 +13,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f1f1f1;
+    background: #180d0dd0;
 }
 
 
@@ -35,7 +35,7 @@ ul li
 ul li:hover
 {
     background:#4edf0b;
-    transform: translateX(50px);
+    transform: translateX(-50px);
 }
 ul li::before
 {
@@ -88,4 +88,26 @@ ul li:last-child::after{
 }
 ul li:last-child:hover::after{
     box-shadow: -100px 120px 20px rgba(84, 199, 7, 0.87);
+}
+ul li span
+{
+    color: #999;
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 100%;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+    display:flex;
+    align-items: center;
+    opacity: 0.5;
+    font-size: 1.25em;
+}
+ul li:hover span
+{
+   color: #35383e;
+    opacity: 1;
 }
